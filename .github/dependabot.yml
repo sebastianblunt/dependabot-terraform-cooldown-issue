@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directory: "/cooldown"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+  - package-ecosystem: "terraform"
+    directory: "/nocooldown"
+    schedule:
+      interval: "weekly"
